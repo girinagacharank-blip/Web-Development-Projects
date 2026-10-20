@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Shelf Digital Library</title>
+    <link rel="stylesheet" href="DLM.css">
+</head>
+<body>
+    <header id="home">
+        <p class="site-label">Digital Library</p>
+        <h1>Open Shelf Digital Library</h1>
+        <p>Find a new idea, learn a new skill, and enjoy reading.</p>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#rules">Library Rules</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome" aria-labelledby="welcome-heading">
+            <p class="eyebrow">Read. Explore. Grow.</p>
+            <h2 id="welcome-heading">Welcome to your digital library</h2>
+            <p>Open Shelf is a digital library interface for exploring books and learning about borrowing. This project demonstrates how HTML can organize a library catalogue, featured titles, categories, and library information.</p>
+        </section>
+
+        <section aria-labelledby="search-heading">
+            <h2 id="search-heading">Search the sample catalogue</h2>
+            <p>This is a visual HTML form. It does not search or filter the books without JavaScript or a server-side program.</p>
+            <form action="#books" method="get">
+                <label for="book-search">Enter a title, author, or category</label>
+                <div class="search-controls">
+                    <input type="search" id="book-search" name="q" placeholder="For example, programming">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="featured" aria-labelledby="featured-heading">
+            <h2 id="featured-heading">Featured Books</h2>
+            <p>These sample titles are highlighted below. The cover photos are illustrative and are not actual book covers.</p>
+            <div class="featured-list">
+                <article class="featured-book">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="A stack of books representing the sample title Python Pathways">
+                    <div>
+                        <h3>Python Pathways</h3>
+                        <p>A beginner-friendly guide to Python basics, problem solving, and small programming projects.</p>
+                        <p><strong>Category:</strong> Programming</p>
+                    </div>
+                </article>
+                <article class="featured-book">
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Books on a shelf representing the sample title Thinking Machines">
+                    <div>
+                        <h3>Thinking Machines</h3>
+                        <p>An introductory overview of artificial intelligence, learning systems, and responsible innovation.</p>
+                        <p><strong>Category:</strong> Artificial Intelligence</p>
+                    </div>
+                </article>
+                <article class="featured-book">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="A welcoming library interior representing the sample title The Curious Communicator">
+                    <div>
+                        <h3>The Curious Communicator</h3>
+                        <p>A sample collection of practical exercises for clear writing, listening, and presentations.</p>
+                        <p><strong>Category:</strong> Communication Skills</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="categories" aria-labelledby="categories-heading">
+            <h2 id="categories-heading">Book Categories</h2>
+            <p>Browse the sample subjects represented in this catalogue.</p>
+            <ul class="category-list">
+                <li><a href="#books">Programming</a></li>
+                <li><a href="#books">Artificial Intelligence</a></li>
+                <li><a href="#books">Mathematics</a></li>
+                <li><a href="#books">Science</a></li>
+                <li><a href="#books">Communication Skills</a></li>
+            </ul>
+        </section>
+
+        <section id="books" aria-labelledby="books-heading">
+            <h2 id="books-heading">Sample Book Catalogue</h2>
+            <p>All book titles, authors, IDs, and availability statuses in this table are sample demonstration records.</p>
+            <div class="table-container">
+                <table>
+                    <caption>Sample books in the Open Shelf catalogue</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Book ID</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Availability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>OS-PRO-001</td>
+                            <td>Python Pathways</td>
+                            <td>Mira Sen</td>
+                            <td>Programming</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>OS-PRO-002</td>
+                            <td>Code by Practice</td>
+                            <td>Dev Malhotra</td>
+                            <td>Programming</td>
+                            <td>Checked out</td>
+                        </tr>
+                        <tr>
+                            <td>OS-PRO-003</td>
+                            <td>Web Craft for Beginners</td>
+                            <td>Anika Rao</td>
+                            <td>Programming</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>OS-AI-001</td>
+                            <td>Thinking Machines</td>
+                            <td>Rohan Iyer</td>
+                            <td>Artificial Intelligence</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>OS-AI-002</td>
+                            <td>Learning from Data</td>
+                            <td>Leela Das</td>
+                            <td>Artificial Intelligence</td>
+                            <td>Checked out</td>
+                        </tr>
+                        <tr>
+                            <td>OS-MAT-001</td>
+                            <td>Mathematics in Motion</td>
+                            <td>Kabir Nair</td>
+                            <td>Mathematics</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>OS-MAT-002</td>
+                            <td>Patterns and Proofs</td>
+                            <td>Tara Menon</td>
+                            <td>Mathematics</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>OS-SCI-001</td>
+                            <td>Everyday Physics Lab</td>
+                            <td>Arjun Pillai</td>
+                            <td>Science</td>
+                            <td>Checked out</td>
+                        </tr>
+                        <tr>
+                            <td>OS-SCI-002</td>
+                            <td>Small Worlds of Science</td>
+                            <td>Meera Kulkarni</td>
+                            <td>Science</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>OS-COM-001</td>
+                            <td>The Curious Communicator</td>
+                            <td>Nisha Verma</td>
+                            <td>Communication Skills</td>
+                            <td>Available</td>
+                        </tr>
+                        <tr>
+                            <td>OS-COM-002</td>
+                            <td>Speak with Clarity</td>
+                            <td>Aditya Bose</td>
+                            <td>Communication Skills</td>
+                            <td>Checked out</td>
+                        </tr>
+                        <tr>
+                            <td>OS-PRO-004</td>
+                            <td>Algorithms Around Us</td>
+                            <td>Farah Khan</td>
+                            <td>Programming</td>
+                            <td>Available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="rules" aria-labelledby="rules-heading">
+            <h2 id="rules-heading">Membership and Library Rules</h2>
+            <p>The membership details and rules below are sample content.</p>
+
+            <h3>Sample membership information</h3>
+            <ul>
+                <li>Sample membership is open to students and staff of Open Shelf.</li>
+                <li>A sample member may borrow up to four books at a time.</li>
+                <li>A sample library card is used to associate loans with a member.</li>
+            </ul>
+
+            <h3>Sample borrowing and return rules</h3>
+            <ul>
+                <li>The sample borrowing period is 14 calendar days.</li>
+                <li>Members should return or renew borrowed books by the due date.</li>
+                <li>Reference books in this sample are for in-library use only.</li>
+                <li>Sample fine: ₹5 per book for each day it is returned late.</li>
+                <li>Sample replacement charge for a lost or damaged book: ₹500.</li>
+            </ul>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact the Library</h2>
+            <p>These are sample contact details for the demonstration website.</p>
+            <address>
+                Open Shelf Digital Library<br>
+                10 Reading Lane, Example Nagar<br>
+                Sample District, India<br>
+                Email: <a href="mailto:library@example.invalid">library@example.invalid</a><br>
+                Phone: +91 00000 00000 (sample number)
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>All catalogue entries and library rules are sample content for an educational project.</p>
+    </footer>
+</body>
+</html>
